@@ -8,19 +8,19 @@
   url = "#about"
   weight = 10
 
+# [[main]]
+#  name = "Posts"
+#  url = "#posts"
+#  weight = 20
+
 [[main]]
-  name = "Posts"
-  url = "#posts"
-  weight = 20
+  name = "Publications"
+  url = "#publications"
+  weight = 30
 
 [[main]]
   name = "Projects"
   url = "#projects"
-  weight = 30
-
-[[main]]
-  name = "Publications"
-  url = "#featured"
   weight = 40
 
 [[main]]
@@ -30,7 +30,13 @@
 
 # Link to a PDF of your resume/CV from the menu.
 # To enable, copy your resume/CV to `static/files/cv.pdf` and uncomment the lines below.
-# [[main]]
-#    name = "CV"
-#    url = "files/cv.pdf"
-#    weight = 70
+[[main]]
+  name = "CV"
+  identifier = "CV"
+  weight = 70
+  [[main]]
+      name = "2-page CV (eng)"
+      parent = "CV"
+      url = "files/wenggy_CV_ENG__2_page_.pdf"
+      weight = 1
+
